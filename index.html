@@ -12,12 +12,12 @@ html{scroll-behavior:smooth}
   --black:#011C40;
   --black2:#023859;
   --black3:#026173;
-  --cyan:#54ACBF;
+  --cyan:#3b82f6;
   --magenta:#26658C;
   --yellow:#ffe100;
   --amber:#ffd166;
   --sky:#A7EBF2;
-  --white:#e8f7fa;
+  --white:#FFFFFF;
   --dim:rgba(240,244,255,0.5);
   --faint:rgba(240,244,255,0.18);
   --veryfaint:rgba(2,28,56,0.85);
@@ -29,7 +29,7 @@ html{scroll-behavior:smooth}
 body{
   font-family:'IBM Plex Mono',monospace;
   background: radial-gradient(ellipse 120% 80% at 20% 0%, #012a52 0%, #011C40 55%, #010f24 100%);
-  color:var(--white);
+  color:white;
   overflow-x:hidden;
   cursor:none;
 }
@@ -78,7 +78,7 @@ nav{
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{
   font-size:13px;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--white);text-decoration:none;
+  color:white;text-decoration:none;
   transition:color .3s;position:relative;
 }
 .nav-links a::after{
@@ -120,7 +120,7 @@ nav{
   font-size:clamp(60px,8.5vw,120px);
   line-height:0.92;
   letter-spacing:0.03em;
-  color:var(--white);
+  color:white;
   
 }
 .hero-name span{
@@ -135,13 +135,13 @@ nav{
 }
 .hero-role{
   font-size:12px;letter-spacing:0.12em;
-  color:var(--white);margin-top:24px;
+  color:white;margin-top:24px;
   border-left:2px solid var(--cyan);
   padding-left:16px;
   line-height:1.6;
   
 }
-.hero-role strong{color:var(--white);font-weight:500}
+.hero-role strong{color:white;font-weight:500}
 .hero-cta{
   display:flex;gap:16px;margin-top:40px;
   
@@ -203,7 +203,7 @@ nav{
 }
 .btn-ghost:hover{
   box-shadow: 0 0 0 1px rgba(84,172,191,0.5), 0 0 20px rgba(84,172,191,0.15), inset 0 1px 0 rgba(167,235,242,0.12);
-  color: var(--white);
+  color: white;
   background: rgba(84,172,191,0.05);
 }
 .btn-ghost:hover::after{ left:120%; }
@@ -283,18 +283,18 @@ section{position:relative;z-index:10}
 .section-eyebrow{
   display:flex;align-items:center;gap:16px;
   font-size:13px;letter-spacing:0.35em;text-transform:uppercase;
-  color:var(--cyan);margin-bottom:20px;
+  color:#16e074; margin-bottom:20px;
 }
 .section-eyebrow::before{
   content:'';display:block;
-  width:32px;height:1px;background:var(--cyan);
+  width:32px;height:1px;background:#16e074;
   box-shadow:0 0 8px var(--cyan);
 }
 .section-title{
   font-family:'Bebas Neue',sans-serif;
   font-size:clamp(44px,6vw,80px);
   line-height:0.95;letter-spacing:0.03em;
-  color:var(--white);margin-bottom:64px;
+  color:white;margin-bottom:64px;
 }
 .section-title em{
   font-style:italic;
@@ -309,20 +309,14 @@ section{position:relative;z-index:10}
 }
 /* ─── ABOUT ─── */
 #about{background:var(--black2)}
-.about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:start}
+
 .about-bio{
-  font-size:13.5px;line-height:2;
-  color:var(--white);
-  font-family:'IBM Plex Mono',monospace;
-  font-weight:300;
-}
-.about-bio strong{color:var(--white);font-weight:400}
-.about-bio .highlight{
-  color:var(--sky);
-  font-style:normal !important;
-  font-weight:700;
-  letter-spacing:0.02em;
-  text-shadow:0 0 14px rgba(84,172,191,0.4);
+  text-align: justify;
+  font-size: 18px;
+  line-height: 2;
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 450;
 }
 .skills-block{margin-top:48px}
 .skills-title{
@@ -335,7 +329,7 @@ section{position:relative;z-index:10}
   border:1px solid var(--border);
   background:var(--veryfaint);
   font-size:13px;letter-spacing:0.1em;
-  color:var(--white);
+  color:white;
   transition:all .3s;cursor:default;
 }
 .skill-tag:hover{
@@ -363,14 +357,14 @@ section{position:relative;z-index:10}
   font-size:12px;letter-spacing:0.2em;text-transform:uppercase;
   color:var(--cyan);margin-bottom:8px;
 }
-.info-card-val{font-size:13px;color:var(--white);line-height:1.5}
-.info-card-sub{font-size:12px;color:var(--white);margin-top:4px}
+.info-card-val{font-size:13px;color:white;line-height:1.5}
+.info-card-sub{font-size:12px;color:white;margin-top:4px}
 /* ─── LAB EXPERIENCE ─── */
 #lab{background:var(--black)}
 .lab-intro{
-  font-size:13px;line-height:1.9;color:var(--white);
+  font-size:13px;line-height:1.9;color:white;
   max-width:600px;margin-bottom:60px;
-  font-weight:300;
+  font-weight:400;
 }
 .techniques-grid{
   display:grid;
@@ -380,9 +374,9 @@ section{position:relative;z-index:10}
 .technique-name{
   font-family:'Bebas Neue',sans-serif;
   font-size:16px;letter-spacing:0.08em;
-  color:var(--white);margin-bottom:8px;
+  color:white;margin-bottom:8px;
 }
-.technique-desc{font-size:13px;color:var(--white);line-height:1.6;letter-spacing:0.05em}
+.technique-desc{font-size:13px;color:white;line-height:1.6;letter-spacing:0.05em}
 /* Photo gallery */
 .lab-gallery-title{
   font-size:9px;letter-spacing:0.25em;text-transform:uppercase;
@@ -408,7 +402,7 @@ section{position:relative;z-index:10}
 .gallery-slot-icon{font-size:24px;opacity:0.3}
 .gallery-slot-text{
   font-size:12px;letter-spacing:0.15em;text-transform:uppercase;
-  color:var(--white);text-align:center;padding:0 12px;
+  color:white;text-align:center;padding:0 12px;
 }
 .gallery-slot-label{
   position:absolute;bottom:10px;left:0;right:0;text-align:center;
@@ -419,22 +413,22 @@ section{position:relative;z-index:10}
 .projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .project-period{
   font-size:12px;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--magenta);margin-bottom:20px;
+  color:#16e074;margin-bottom:20px;
   text-shadow:0 0 12px rgba(38,101,140,0.3);
 }
 .project-title{
   font-family:'Bebas Neue',sans-serif;
   font-size:26px;letter-spacing:0.05em;
-  color:var(--white);margin-bottom:16px;line-height:1.1;
+  color:white;margin-bottom:16px;line-height:1.1;
 }
 .project-desc{
-  font-size:13px;line-height:1.9;color:var(--white);
+  font-size:13px;line-height:1.9;color:white;
   font-weight:300;margin-bottom:28px;
 }
 .project-tags{display:flex;flex-wrap:wrap;gap:8px}
 .project-tag{
   font-size:12px;letter-spacing:0.15em;text-transform:uppercase;
-  color:var(--white);
+  color:white;
   border:1px solid var(--border);
   padding:4px 12px;
   transition:all .3s;
@@ -448,7 +442,7 @@ section{position:relative;z-index:10}
   padding: 11px 24px;
   background: linear-gradient(135deg, rgba(84,172,191,0.18) 0%, rgba(38,101,140,0.12) 100%);
   border: none;
-  color: #A7EBF2;
+  color: #FFFFFF;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
   font-weight: 500;
@@ -488,13 +482,13 @@ section{position:relative;z-index:10}
 /* ─── CERTIFICATIONS ─── */
 #certs{background:var(--black)}
 .certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.cert-issuer{font-size:13px;color:var(--white)}
+.cert-issuer{font-size:13px;color:white}
 .cert-skills{font-size:12px;color:var(--cyan);margin-top:4px;letter-spacing:0.05em}
 .btn-verify{
   padding: 10px 22px;
   background: linear-gradient(135deg, rgba(84,172,191,0.15) 0%, rgba(38,101,140,0.08) 100%);
   border: none;
-  color: #A7EBF2;
+  color: white;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
   font-weight: 500;
@@ -518,19 +512,6 @@ section{position:relative;z-index:10}
   text-shadow: none;
 }
 .btn-verify:hover::before { transform: scaleX(1); }
-.btn-file{
-  padding: 10px 22px;
-  background: linear-gradient(135deg, rgba(84,172,191,0.15) 0%, rgba(38,101,140,0.08) 100%);
-  border: none;
-  color: #A7EBF2;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-  font-weight: 500;
-  white-space: nowrap; display: inline-block;
-  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-  box-shadow: 0 0 0 1px rgba(84,172,191,0.5), inset 0 1px 0 rgba(167,235,242,0.15);
-  text-shadow: 0 0 12px rgba(167,235,242,0.5);
-}
 /* ─── EXPERIENCE ─── */
 #experience{background:var(--black2)}
 .exp-item{
@@ -549,7 +530,7 @@ section{position:relative;z-index:10}
 }
 .exp-item.visible::before{height:100%}
 .exp-period{
-  font-size:13px;color:var(--white);
+  font-size:13px;color:white;
   letter-spacing:0.08em;line-height:1.6;padding-top:4px;
 }
 .exp-period strong{color:var(--cyan);display:block;font-size:12px;margin-bottom:4px;letter-spacing:0.15em;text-transform:uppercase}
@@ -557,19 +538,19 @@ section{position:relative;z-index:10}
 .exp-role{
   font-family:'Bebas Neue',sans-serif;
   font-size:28px;letter-spacing:0.05em;
-  color:var(--white);margin-bottom:8px;
+  color:white;margin-bottom:8px;
 }
 .exp-org{
-  font-size:12px;color:var(--cyan);
+  font-size:20px;color:#F5FFFA; font-weight:800;
   margin-bottom:20px;letter-spacing:0.05em;
 }
 .exp-desc{
-  font-size:13px;line-height:1.9;color:var(--white);
+  font-size:13px;line-height:1.9;color:white;
   font-weight:300;margin-bottom:20px;
 }
 .exp-activities{
-  font-size:13px;letter-spacing:0.1em;
-  color:var(--white);border-left:1px solid var(--border);
+  font-size:13px;letter-spacing:0.1em; font-weight:700;
+  color:white;border-left:1px solid var(--border);
   padding-left:16px;line-height:1.8;
 }
 /* ─── EDUCATION ─── */
@@ -578,7 +559,7 @@ section{position:relative;z-index:10}
 .edu-inst{
   font-family:'Bebas Neue',sans-serif;
   font-size:22px;letter-spacing:0.04em;
-  color:var(--white);margin-bottom:10px;line-height:1.1;
+  color:white;margin-bottom:10px;line-height:1.1;
 }
 .edu-gpa{
   display:inline-block;margin-top:10px;
@@ -594,14 +575,14 @@ section{position:relative;z-index:10}
   font-family:'Bebas Neue',sans-serif;
   font-size:clamp(44px,5.5vw,72px);
   line-height:0.95;letter-spacing:0.03em;
-  color:var(--white);margin-bottom:24px;
+  color:white;margin-bottom:24px;
 }
 .contact-headline em{
   color:var(--cyan);
   text-shadow:0 0 30px rgba(84,172,191,0.25);
 }
 .contact-sub{
-  font-size:13px;line-height:1.9;color:var(--white);
+  font-size:13px;line-height:1.9;color:white;
   font-weight:300;margin-bottom:48px;
 }
 .contact-links{display:flex;flex-direction:column;gap:12px}
@@ -610,7 +591,7 @@ section{position:relative;z-index:10}
   padding:18px 24px;
   background:rgba(1,20,44,0.85);
   border:1px solid rgba(84,172,191,0.15);
-  color:var(--white);text-decoration:none;
+  color:white;text-decoration:none;
   font-size:13px;transition:all .3s;
   position:relative;overflow:hidden;
 }
@@ -620,7 +601,7 @@ section{position:relative;z-index:10}
   transition:width .3s;
 }
 .contact-link:hover{
-  border-color:rgba(84,172,191,0.3);color:var(--white);
+  border-color:rgba(84,172,191,0.3);color:white;
   transform:translateX(4px);
 }
 .contact-link:hover::before{width:100%}
@@ -638,9 +619,9 @@ section{position:relative;z-index:10}
 .contact-link-meta{flex:1}
 .contact-link-type{
   font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
-  color:var(--white);display:block;margin-bottom:4px;
+  color:white;display:block;margin-bottom:4px;
 }
-.contact-link-val{font-size:14px;color:var(--white);letter-spacing:0.03em}
+.contact-link-val{font-size:14px;color:white;letter-spacing:0.03em}
 .contact-link-arrow{color:var(--cyan);font-size:16px;transition:all .3s}
 .contact-link:hover .contact-link-arrow{color:var(--cyan);transform:translateX(4px)}
 /* Availability badge */
@@ -665,7 +646,7 @@ footer{
   display:flex;justify-content:space-between;align-items:center;
   background:rgba(1,10,24,0.95);
 }
-.footer-left{font-size:12px;color:var(--white);letter-spacing:0.1em}
+.footer-left{font-size:12px;color:white;letter-spacing:0.1em}
 .footer-left strong{color:var(--cyan)}
 .footer-right{font-size:11px;color:rgba(180,210,255,0.6);letter-spacing:0.15em;text-transform:uppercase}
 /* ─── SCROLL REVEAL ─── */
@@ -784,7 +765,7 @@ section[id].sec-above {
   font-size: 11px !important;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--white) !important;
+  color: white !important;
   display: block;
   margin-bottom: 4px;
   opacity: 1 !important;
@@ -1071,9 +1052,9 @@ section, nav, footer {
 .tech-name {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 14px; letter-spacing: 0.1em;
-  color: var(--white); margin-bottom: 12px;
+  color: white; margin-bottom: 12px;
 }
-.tech-desc { font-size: 12px; color: var(--white); line-height: 1.7; }
+.tech-desc { font-size: 12px; color: white; line-height: 1.7; }
 
 /* ── LAYOUT: project cards ─────────────────────────────────── */
 .project-grid {
@@ -1099,12 +1080,12 @@ section, nav, footer {
 }
 .proj-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px; color: var(--white);
+  font-size: 22px; color: white;
   margin-bottom: 20px; line-height: 1.2;
 }
 .project-desc {
   font-size: 13px; line-height: 1.9;
-  color: var(--white); margin-bottom: 28px;
+  color: white; margin-bottom: 28px;
 }
 .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .project-tag {
@@ -1112,7 +1093,7 @@ section, nav, footer {
   text-transform: uppercase;
   background: rgba(84,172,191,0.05);
   border: 1px solid rgba(84,172,191,0.25);
-  color: var(--cyan);
+  color: white;
   padding: 5px 12px; border-radius: 4px;
 }
 
@@ -1129,18 +1110,18 @@ section, nav, footer {
 .cert-year {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 48px; line-height: 1;
-  color: rgba(167,235,242,0.75);
+  color: #16e071;
   letter-spacing: -0.02em;
   text-shadow: 0 0 20px rgba(84,172,191,0.5);
 }
 .cert-name {
   font-size: 15px; font-weight: 700;
-  color: var(--white); margin-bottom: 6px;
+  color: white; margin-bottom: 6px;
 }
-.cert-issuer { font-size: 13px; color: var(--white); margin-bottom: 6px; }
+.cert-issuer { font-size: 13px; color: white; margin-bottom: 6px; font-weight: 500 }
 .cert-skills {
-  font-size: 11px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--cyan);
+  font-size: 11px; letter-spacing: 0.12em; font-weight: 450;
+  text-transform: uppercase; color: #16bbe0;
   margin-top: 4px;
 }
 @media(max-width:768px){
@@ -1166,20 +1147,20 @@ section, nav, footer {
 .edu-card-logo img { width: 100%; height: 100%; object-fit: contain; }
 .edu-type {
   font-size: 11px; letter-spacing: 0.18em;
-  text-transform: uppercase; color: var(--magenta);
+  text-transform: uppercase; color: #16e071;
   margin-bottom: 12px;
 }
 .edu-name {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px; color: var(--white);
+  font-size: 22px; color: white;
   line-height: 1.2; margin-bottom: 12px;
 }
 .edu-deg {
-  font-size: 13px; color: rgba(200,225,255,0.75);
+  font-size: 13px; color: white;
   line-height: 1.6; margin-bottom: 20px;
 }
 .edu-period {
-  font-size: 13px; color: var(--white);
+  font-size: 13px; color: white;
   font-weight: 600; letter-spacing: 0.05em;
   border-top: 1px solid rgba(84,172,191,0.1);
   padding-top: 14px; margin-bottom: 14px;
@@ -1188,7 +1169,7 @@ section, nav, footer {
   display: inline-block;
   font-size: 11px; letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: #F5FFFA;
   border: 1px solid rgba(84,172,191,0.35);
   padding: 5px 14px; border-radius: 6px;
   background: rgba(84,172,191,0.05);
@@ -1211,7 +1192,7 @@ section, nav, footer {
 .skill-label {
   font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white); text-align: center;
+  color: white; text-align: center;
   line-height: 1.3;
 }
 .skill-card img,
@@ -1233,7 +1214,7 @@ section, nav, footer {
   background: rgba(1,20,44,0.9);
   border: 1px solid rgba(84,172,191,0.15);
   border-radius: 12px;
-  font-size: 14px; color: var(--white);
+  font-size: 14px; color: white;
   letter-spacing: 0.05em; cursor: default;
   position: relative; overflow: hidden;
   transition: border-color 0.25s, transform 0.25s cubic-bezier(0.22,1,0.36,1), background 0.25s;
@@ -1283,7 +1264,7 @@ section, nav, footer {
   background: linear-gradient(135deg, rgba(2,34,68,0.97) 0%, rgba(1,24,50,0.99) 100%);
   box-shadow: 0 8px 40px rgba(0,0,0,0.55), 0 2px 8px rgba(0,0,0,0.3);
   text-decoration: none;
-  color: var(--white);
+  color: white;
   overflow: hidden;
   will-change: transform;
   transition: border-color 0.35s, box-shadow 0.35s, transform 0.25s cubic-bezier(0.22,1,0.36,1);
@@ -1350,14 +1331,14 @@ section, nav, footer {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--white);
+  color: white;
   display: block;
   margin-bottom: 4px;
 }
 
 .contact-link-val {
   font-size: 14px;
-  color: var(--white);
+  color: white;
   letter-spacing: 0.03em;
 }
 
@@ -1525,7 +1506,7 @@ section, nav, footer {
 }
 .project-tag:hover {
   border-color: var(--cyan);
-  color: var(--cyan);
+  color: white;
   box-shadow: 0 0 12px rgba(84,172,191,0.2);
   text-shadow: 0 0 8px rgba(84,172,191,0.4);
 }
@@ -1710,8 +1691,7 @@ footer::before {
       <div>
         <h2 class="section-title fly fly-left">The Science<br>of <em>Matter</em></h2>
         <p class="about-bio fly fly-left d1">
-          As a <strong>Materials Science and Engineering student</strong>, I am deeply engaged in research and inquiry, with strong interests in the fundamental principles that govern <span class="highlight">structure–property–processing relationships</span>. I am particularly focused on advanced functional materials, including <strong>quantum materials, semiconductors, nanomaterials, and biomaterials</strong>.<br><br>
-          My research interests also extend to <strong>density functional theory (DFT)</strong> and computational materials science, which I consider powerful tools to investigate and predict material behavior at the atomic scale. I am motivated to advance innovation in <strong>materials design, performance, and sustainability</strong> through a rigorous combination of theory, computation, and application-driven research.
+          As a Materials Science and Engineering student, I am deeply engaged in research and inquiry, with strong interests in the fundamental principles that govern structure–property–processing relationships. I am particularly focused on advanced functional materials, including quantum materials, semiconductors, nanomaterials, and biomaterials. My research interests also extend to density functional theory (DFT) and computational materials science, which I consider powerful tools to investigate and predict material behavior at the atomic scale. I am motivated to advance innovation in materials design, performance, and sustainability through a rigorous combination of theory, computation, and application-driven research.
         </p>
         
       </div>
@@ -1864,7 +1844,7 @@ footer::before {
           <div class="cert-issuer">Billah Multifunctional Nanomaterials Group (BMNG) · Issued Jan 2026</div>
           <div class="cert-skills">Skills: Materials Characterization · Nanomaterials · Measurement Techniques</div>
         </div>
-        <span class="btn-file">Certificate on File</span>
+        <span class="btn-verify">Certificate</span>
       </div>
 
       <div class="cert-item fly fly-right d2">
